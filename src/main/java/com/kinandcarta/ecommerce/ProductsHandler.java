@@ -1,7 +1,7 @@
 package com.kinandcarta.ecommerce;
 
-import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -19,6 +19,9 @@ public class ProductsHandler implements ServiceHandler {
     @Override
     @Transactional
     public Products create(final Products model) {
+        if (StringUtils.isEmpty(model.getName()) || StringUtils.isEmpty(model.getProductDescription()) || model.getUnitPrice() == null)
+            throw new MissingProductInformationException("Name, description and unit price required to create Product.");
+
         return productsRepository.save(model);
     }
 
@@ -41,7 +44,7 @@ public class ProductsHandler implements ServiceHandler {
     @Override
     public Products findById(final Long id) {
         if (!productsRepository.existsById(id)) {
-            throw new EntityNotFoundException("findbyId - not found by id - " + id);
+            throw new ProductNotFoundException("findbyId - not found by id - " + id);
         }
         return productsRepository.getReferenceById(id);
     }

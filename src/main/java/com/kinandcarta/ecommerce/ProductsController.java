@@ -26,6 +26,10 @@ public class ProductsController implements CrudUseCase<Products> {
         try {
             return new ResponseEntity<>(productsHandler.create(model), HttpStatus.OK);
         } catch (final Exception e) {
+            if (e instanceof MissingProductInformationException) {
+                log.error("::METHOD, create, MissingProductInformationException.");
+                return ResponseEntity.badRequest().build();
+            }
             log.error("::METHOD, create, exception occured.", e);
             return ResponseEntity.notFound().build();
         }
@@ -59,6 +63,10 @@ public class ProductsController implements CrudUseCase<Products> {
         try {
             return new ResponseEntity<>(productsHandler.findById(id), HttpStatus.OK);
         } catch (final Exception e) {
+            if (e instanceof ProductNotFoundException) {
+                log.error("ProductNotFoundException, for ID -> " + id);
+                return ResponseEntity.badRequest().build();
+            }
             log.error("::METHOD, findById, exception occured.", e);
             return ResponseEntity.notFound().build();
         }
