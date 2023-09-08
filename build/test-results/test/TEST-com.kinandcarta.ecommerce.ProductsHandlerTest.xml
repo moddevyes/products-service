@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kinandcarta.ecommerce.ProductsHandlerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-07T07:50:31" hostname="2NF0VT3" time="0.023">
+<testsuite name="com.kinandcarta.ecommerce.ProductsHandlerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-07T13:14:24" hostname="2NF0VT3" time="0.014">
   <properties/>
-  <testcase name="shouldDeleteProduct()" classname="com.kinandcarta.ecommerce.ProductsHandlerTest" time="0.012"/>
-  <testcase name="shouldCreate_find_andUpdateProduct()" classname="com.kinandcarta.ecommerce.ProductsHandlerTest" time="0.005"/>
-  <testcase name="shouldFindOrder_byId()" classname="com.kinandcarta.ecommerce.ProductsHandlerTest" time="0.002"/>
+  <testcase name="shouldDeleteProduct()" classname="com.kinandcarta.ecommerce.ProductsHandlerTest" time="0.007"/>
+  <testcase name="shouldCreate_find_andUpdateProduct()" classname="com.kinandcarta.ecommerce.ProductsHandlerTest" time="0.004"/>
+  <testcase name="shouldFindOrder_byId()" classname="com.kinandcarta.ecommerce.ProductsHandlerTest" time="0.001"/>
   <testcase name="shouldFindAll_Products()" classname="com.kinandcarta.ecommerce.ProductsHandlerTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

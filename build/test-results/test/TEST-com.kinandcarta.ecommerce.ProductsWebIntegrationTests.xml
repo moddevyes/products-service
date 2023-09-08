@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kinandcarta.ecommerce.ProductsWebIntegrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-07T07:50:35" hostname="2NF0VT3" time="0.361">
+<testsuite name="com.kinandcarta.ecommerce.ProductsWebIntegrationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-09-07T13:14:27" hostname="2NF0VT3" time="0.278">
   <properties/>
-  <testcase name="shouldUpdateAProduct()" classname="com.kinandcarta.ecommerce.ProductsWebIntegrationTests" time="0.334"/>
-  <testcase name="shouldCreateANewProduct()" classname="com.kinandcarta.ecommerce.ProductsWebIntegrationTests" time="0.025"/>
-  <system-out><![CDATA[02:50:31.411 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kinandcarta.ecommerce.ProductsWebIntegrationTests]: ProductsWebIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-02:50:31.803 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kinandcarta.ecommerce.ProductsApplication for test class com.kinandcarta.ecommerce.ProductsWebIntegrationTests
+  <testcase name="shouldUpdateAProduct()" classname="com.kinandcarta.ecommerce.ProductsWebIntegrationTests" time="0.264"/>
+  <testcase name="shouldCreateANewProduct()" classname="com.kinandcarta.ecommerce.ProductsWebIntegrationTests" time="0.013"/>
+  <system-out><![CDATA[08:14:24.815 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kinandcarta.ecommerce.ProductsWebIntegrationTests]: ProductsWebIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+08:14:25.051 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kinandcarta.ecommerce.ProductsApplication for test class com.kinandcarta.ecommerce.ProductsWebIntegrationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -14,12 +14,12 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.3)
 
-2023-09-07T02:50:33.002-05:00  INFO 16916 --- [    Test worker] c.k.e.ProductsWebIntegrationTests        : Starting ProductsWebIntegrationTests using Java 17.0.8 with PID 16916 (started by DavidKing in C:\Users\DavidKing\Desktop\GitHub_Projects\products-service)
-2023-09-07T02:50:33.004-05:00  INFO 16916 --- [    Test worker] c.k.e.ProductsWebIntegrationTests        : No active profile set, falling back to 1 default profile: "default"
-2023-09-07T02:50:34.945-05:00  INFO 16916 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-09-07T02:50:34.945-05:00  INFO 16916 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-09-07T02:50:34.949-05:00  INFO 16916 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
-2023-09-07T02:50:35.002-05:00  INFO 16916 --- [    Test worker] c.k.e.ProductsWebIntegrationTests        : Started ProductsWebIntegrationTests in 2.833 seconds (process running for 8.87)
+2023-09-07T08:14:26.167-05:00  INFO 5596 --- [    Test worker] c.k.e.ProductsWebIntegrationTests        : Starting ProductsWebIntegrationTests using Java 17.0.8 with PID 5596 (started by DavidKing in C:\Users\DavidKing\Desktop\GitHub_Projects\products-service)
+2023-09-07T08:14:26.169-05:00  INFO 5596 --- [    Test worker] c.k.e.ProductsWebIntegrationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-09-07T08:14:27.602-05:00  INFO 5596 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-09-07T08:14:27.602-05:00  INFO 5596 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-09-07T08:14:27.609-05:00  INFO 5596 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2023-09-07T08:14:27.653-05:00  INFO 5596 --- [    Test worker] c.k.e.ProductsWebIntegrationTests        : Started ProductsWebIntegrationTests in 2.237 seconds (process running for 5.632)
 
 MockHttpServletRequest:
       HTTP Method = PUT
