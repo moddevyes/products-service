@@ -4,11 +4,11 @@ EXPOSE 8002
 ARG JAR_FILE=build/libs/products-service-0.0.1.jar
 ARG JAR_FILE
 COPY ${JAR_FILE} products-service-0.0.1.jar
-ENTRYPOINT ["java","-jar","/products-service-0.0.1.jar"]
+ENTRYPOINT ["java","-jar","products-service-0.0.1.jar"]
 
 
 # BUILD
-# docker build -t products-service .
+# docker build -t products-service:latest .
 
 # IMAGE built and in docker
 
