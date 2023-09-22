@@ -2,7 +2,7 @@ spring:
   application:
     name: products-service
   datasource:
-    url: jdbc:mysql://${mysqldocker.products.container.name:localhost}:3307/ecommerce_products_db?&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://${mysqldocker.products.container.name:localhost}:3306/ecommerce_products_db?&useSSL=false&allowPublicKeyRetrieval=true
     username: ${SPRING_DATASOURCE_USERNAME:davidking}
     password: ${SPRING_DATASOURCE_PASSWORD:davidking!!}
   jpa:

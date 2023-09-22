@@ -5,7 +5,7 @@ echo ""
 echo "Creating PRODUCTS database."
 echo ""
 
-docker run --name products_mysql_container -d -p 3302:3307 -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root-password \
+docker run --name products_mysql_container -d -p 3302:3306 -e MYSQL_ROOT_PASSWORD_FILE=/run/secrets/mysql-root-password \
 -e MYSQL_DATABASE=ecommerce_products_db \
 -e MYSQL_USER=davidking \
 -e MYSQL_PASSWORD=davidking!! \
